@@ -1,0 +1,22 @@
+.auth-container{
+    padding: 48px 20px;
+}
+
+.error-message{
+    color: var(--red);
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 410px) {
+    .auth-container{
+        padding: 48px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .auth-container{
+        width: 565px;
+        margin: 0 auto;
+    }
+}

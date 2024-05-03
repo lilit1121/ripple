@@ -1,0 +1,28 @@
+.login {
+    font-size: 14px;
+    color: var(--gray);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login a {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.input_container {
+    margin: 42px 0 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button_container {
+  display: flex;
+  gap: 24px;  
+  margin-top: 24px;
+}
+
+.button {
+    min-width: 200px;
+}
