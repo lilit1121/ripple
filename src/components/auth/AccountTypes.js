@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AuthHeader from "../../components/auth/AuthHeader";
-import UserSvg from "../svg/auth/user";
+import UserSvg from "../svg/auth/User";
 import accountTypesStyles from "../../assets/styles/components/auth/AccountTypes.module.css";
 import "../../assets/styles/views/Auth.css";
 
@@ -56,7 +56,7 @@ function AccountTypes({ handleStepChange, handleTypeChange }) {
           </label>
         ))}
       </div>
-      <button onClick={handleStepChange} className="blue-btn">
+      <button onClick={handleStepChange} className="blue-btn btn">
         Continue Sign-Up
       </button>
     </div>

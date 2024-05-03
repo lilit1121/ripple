@@ -53,3 +53,56 @@
     font-weight: 400;
     margin-left: 6px;
 }
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.button_container button {
+    gap: 8px;
+}
+
+.mw_140{
+    max-width: 140px; 
+}
+
+.mw_46 {
+    max-width: 46px;
+}
+
+.tabslist {
+    border-bottom: 1px solid #CFDBD5;
+    display: flex;
+    justify-content: center;
+    margin:40px 0 60px -80px;
+    gap: 40px;
+    width: calc(100% + 160px);
+}
+
+.tab {
+    padding: 13px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--gray);
+}
+
+.tab[aria-selected="true"] {
+    color: black;
+    position: relative;
+}
+
+.tab[aria-selected="true"]::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    display: block;
+    bottom: -1.8px;
+    left: 0;
+}

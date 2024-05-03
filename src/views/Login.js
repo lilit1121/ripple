@@ -74,7 +74,7 @@ function Login() {
                 Recover password
               </Link>
             </div>
-            <button className="blue-btn" type="submit">
+            <button className="blue-btn btn" type="submit">
               Sign In
             </button>
           </form>

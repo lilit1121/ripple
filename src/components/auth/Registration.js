@@ -9,7 +9,7 @@ import {
 } from "../../utils/ValidationScheme";
 import registration from "../../assets/styles/components/auth/Registration.module.css";
 import "../../assets/styles/views/Auth.css";
-import Modal from "../base/modal";
+import Modal from "../base/Modal";
 
 function Registration({ type }) {
   const [open, setOpen] = useState(false);
@@ -168,7 +168,7 @@ function Registration({ type }) {
                 />
               </div>
             </div>
-            <button className="blue-btn" type="submit">
+            <button className="blue-btn btn" type="submit">
               Submit and Continue
             </button>
           </form>
@@ -187,10 +187,10 @@ function Registration({ type }) {
         type="success"
       >
         <div className={registration.button_container}>
-          <button className={`secondary-btn ${registration.button}`}>
+          <button className={`secondary-btn btn ${registration.button}`}>
             Back
           </button>
-          <button className={`blue-btn ${registration.button}`}>
+          <button className={`blue-btn btn ${registration.button}`}>
             Verify Account
           </button>
         </div>
