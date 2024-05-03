@@ -26,10 +26,12 @@
 .secondary-btn {
     color: var(--gray);
     border: 1px solid #CFDBD599;
+    background-color: white;
 }
 
 .secondary-btn-black {
     border: 1px solid #CFDBD599;
+    background-color: white;
 }
 
 .relative {

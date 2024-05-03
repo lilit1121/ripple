@@ -1,0 +1,22 @@
+.footer{
+    background-color: #EBF0F080;
+}
+
+.footer > div:last-child {
+    border-top: 1px solid #CFDBD599;
+    padding: 34px 32px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.footer > div:last-child a {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.footer > div:last-child p {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--gray);
+}
