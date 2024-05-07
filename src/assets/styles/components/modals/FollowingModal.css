@@ -15,17 +15,20 @@
 .following-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     border: 1px solid #CFDBD599;
     padding: 24px;
     border-radius: 20px;
-    gap: 113px;
+    gap: 20px;
 }
 
 .following-block > div:first-child {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     align-items: center;
+    justify-content: center;
 }
 
 .following-block > div:first-child > div:first-child {
@@ -40,7 +43,9 @@
 
 .following-block > div:last-child {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+    justify-content: center;
 }
 
 .following-block > div:last-child > div {
@@ -58,6 +63,7 @@
 
 .following-user-info > div:first-child {
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .following-user-info > div:first-child h6 {
@@ -75,10 +81,17 @@
 .following-user-info > div:last-child {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.following-user-info > div:last-child > div {
+    display: flex;
     gap: 24px;
 }
 
-.following-user-info > div:last-child > div p{
+.following-user-info > div:last-child > div p {
     color: var(--gray);
     font-weight: 700;
     font-size: 13px;
@@ -95,10 +108,34 @@
 }
 
 .following-user-info > div:last-child button {
-    min-width: 110px;
+    width: 100%;
 }
 
+@media screen and (min-width: 440px) {
+    .following-user-info > div:last-child button {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 554px) {
+    .following-user-info > div:first-child {
+        text-align: left;
+    }
+}
 
 @media screen and (min-width: 924px) {
+    .following-block {
+        align-items: center;
+        flex-direction: row;
+        gap: 113px;
+    }
 
+    .following-block > div:last-child{
+        flex-wrap: nowrap;
+    }
+
+    .following-block > div:first-child {
+        justify-content: start;
+    }
 }
+

@@ -123,37 +123,45 @@ function Profile() {
         <div className="following-modal">
           <h6>Following</h6>
           <div>
-          {generateArray(numCards).map((index) => (
-            <div key={index} className="following-block">
-              <div>
+            {generateArray(numCards).map((index) => (
+              <div key={index} className="following-block">
                 <div>
-                  <img src={img} alt="user" />
-                </div>
-                <div className="following-user-info">
                   <div>
-                    <h6>Taylor Swift</h6>
-                    <p>Anime, cartoons, animation</p>
+                    <img src={img} alt="user" />
                   </div>
-                  <div>
-                    <button className="btn blue-btn">Follow</button>
+                  <div className="following-user-info">
                     <div>
-                      <p>
-                        15K
-                        <span>Followers</span>
-                      </p>
+                      <h6>Taylor Swift</h6>
+                      <p>Anime, cartoons, animation</p>
+                    </div>
+                    <div>
+                      <button className="btn blue-btn">Follow</button>
+                      <div>
+                        <p>
+                          15K
+                          <span>Followers</span>
+                        </p>
+                        <p>
+                          15K
+                          <span>Following</span>
+                        </p>
+                        <p>
+                          108
+                          <span>Items</span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div>
+                  {generateArray(numCards).map((index) => (
+                    <div key={index}>
+                      <img src={bg} alt="bg" />
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div>
-                {generateArray(numCards).map((index) => (
-                  <div key={index}>
-                    <img src={bg} alt="bg" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+            ))}
           </div>
         </div>
       </Modal>
