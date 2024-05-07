@@ -3,6 +3,7 @@
     box-shadow: 0 20px 24px 0 #999BA82E;
     border-radius: 16px;
     padding: 40px;
+    overflow: auto;
 }
 
 .modal_title {
