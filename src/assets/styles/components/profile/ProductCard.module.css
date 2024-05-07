@@ -1,5 +1,94 @@
-.card{
+.card {
     border: 1px solid #CFDBD5;
     border-radius: 16px;
     padding: 24px;
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card_header__users {
+    display: flex;
+}
+
+.card_header__users > div {
+    width: 34px;
+    height: 34px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card_header__users > div img {
+    width: 100%;
+    height: 100%;  
+}
+
+.card_image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 0 15px;
+}
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_title {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_content_collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_price {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card_price span {
+    color: black;
+    font-weight: 700;
+}
+
+.card_content > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card_content_collection > div:last-child {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    background-color: white;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 100px;
 }

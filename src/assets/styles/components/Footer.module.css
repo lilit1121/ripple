@@ -1,13 +1,33 @@
-.footer{
+.footer {
     background-color: #EBF0F080;
+}
+
+.footer_container {
+    justify-content: space-between;
+    padding: 27.5px 40px 25px;
+    gap: 28.5px 88px;
+}
+
+.footer_container > div:first-child {
+    width: 100%;
+    flex-direction: column;
+    gap: 28.5px;
+}
+
+.footer_title {
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 18px;
 }
 
 .footer > div:last-child {
     border-top: 1px solid #CFDBD599;
-    padding: 34px 32px;
+    padding: 17px 16px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 22px;
+    gap: 15px 22px;
 }
 
 .footer > div:last-child a {
@@ -19,4 +39,99 @@
     font-weight: 500;
     font-size: 12px;
     color: var(--gray);
+}
+
+.footer_subscribe {
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer_subscribe button {
+    width: 100%;
+}
+
+.footer_subscribe > div input {
+    border: 1px solid #CFDBD599;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 0px 35px 0 20px;
+    height: 46px;
+    width: calc(100% - 57px);
+    background-color: transparent;
+}
+
+.footer_subscribe > div input::placeholder {
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer_subscribe > div svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.footer_socialMedia a {
+    padding: 15px;
+}
+
+.footer_container > div:last-child {
+    gap: 28.5px 56px;
+    width: 100%;
+}
+
+.footer_container > div:last-child ul li a {
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.footer__reimagia_block p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer_container {
+        padding: 65px 80px 50px;
+    }
+
+    .footer > div:last-child {
+        padding: 34px 32px;
+    }
+
+    .footer_container > div:first-child {
+        width: max-content;
+        gap: 57px;
+    }
+
+    .footer_container {
+        gap: 57px 88px;
+    }
+
+    .footer_subscribe {
+        flex-direction: row;
+    }
+
+    .footer_subscribe button {
+        width: 134px;
+    }
+
+    .footer_subscribe > div input {
+        height: 100%;
+    }
+
+    .footer__reimagia_block p {
+        width: 305px;
+    }
+
+    .footer_container > div:last-child {
+        width: max-content;
+    }
 }

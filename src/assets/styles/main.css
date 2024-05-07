@@ -21,6 +21,7 @@
 
 .lightBlue-btn {
     background-color: var(--lightBlue);
+    color: var(--gray);
 }
 
 .secondary-btn {
@@ -38,3 +39,18 @@
     position: relative;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

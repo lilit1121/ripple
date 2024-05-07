@@ -1,11 +1,17 @@
 import { Formik, Field, ErrorMessage } from "formik";
+
 import { Link } from "react-router-dom";
+
 import { socialMediaLogin } from "../constants/login";
+
+import "../assets/styles/views/Auth.css";
+import login from "../assets/styles/views/Login.module.css";
+
 import AuthHeader from "../components/auth/AuthHeader";
 import AuthInput from "../components/auth/AuthInput";
+
 import { loginSchema } from "../utils/ValidationScheme";
-import login from "../assets/styles/views/Login.module.css";
-import "../assets/styles/views/Auth.css";
+
 
 function Login() {
   return (

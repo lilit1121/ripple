@@ -1,4 +1,5 @@
 import profile from "../../assets/styles/views/Profile.module.css";
+
 import bg from "../../assets/images/example/bg.png";
 import image from "../../assets/images/example/Img.png";
 

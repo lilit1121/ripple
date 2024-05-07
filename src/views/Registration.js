@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import AccountTypes from "../components/auth/AccountTypes";
 import RegistrationComp from "../components/auth/Registration";
 

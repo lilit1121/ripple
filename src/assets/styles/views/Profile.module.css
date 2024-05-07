@@ -1,5 +1,10 @@
 .profile {
-    padding: 40px 80px 48px;
+    padding: 20px;
+}
+
+.profile > button {
+    max-width: 241px;
+    margin: auto;
 }
 
 .profile_background {
@@ -31,7 +36,7 @@
 
 .name_surname {
     font-weight: 800;
-    font-size: 42px;
+    font-size: 30px;
     text-align: center;
     line-height: 51px;
     margin-top: 62px;
@@ -54,7 +59,7 @@
     margin-left: 6px;
 }
 
-.button_container{
+.button_container {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -65,7 +70,7 @@
     gap: 8px;
 }
 
-.mw_140{
+.mw_140 {
     max-width: 140px; 
 }
 
@@ -77,9 +82,9 @@
     border-bottom: 1px solid #CFDBD5;
     display: flex;
     justify-content: center;
-    margin:40px 0 60px -80px;
+    margin:40px 0 60px -20px;
     gap: 40px;
-    width: calc(100% + 160px);
+    width: calc(100% + 40px);
 }
 
 .tab {
@@ -105,4 +110,53 @@
     display: block;
     bottom: -1.8px;
     left: 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin: 40px 0;
+}
+
+@media screen and (min-width: 425px) {
+    .profile {
+        padding: 20px 40px 24px;
+    }
+
+    .tabslist {
+        margin:40px 0 60px -40px;
+        width: calc(100% + 80px);
+    }
+
+    .name_surname {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile {
+        padding: 40px 80px 48px;
+    }
+
+    .tabslist {
+        margin:40px 0 60px -80px;
+        width: calc(100% + 160px);
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
