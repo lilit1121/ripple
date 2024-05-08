@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import { styled } from "@mui/system";
 import { Modal as BaseModal } from "@mui/base/Modal";
-import modal from "../../assets/styles/components/base/modal.module.scss";
+import modal from "../../assets/styles/components/base/Modal.module.scss";
 import success from "../../assets/images/svg/success.svg";
 
 export default function ModalUnstyled({

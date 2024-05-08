@@ -6,12 +6,12 @@
     justify-content: space-between;
     padding: 27.5px 40px 25px;
     gap: 28.5px 88px;
-}
 
-.footer_container > div:first-child {
-    width: 100%;
-    flex-direction: column;
-    gap: 28.5px;
+    > div:first-child {
+        width: 100%;
+        flex-direction: column;
+        gap: 28.5px;
+    }
 }
 
 .footer_title {

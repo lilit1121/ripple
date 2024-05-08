@@ -1,4 +1,4 @@
-import filter from "../../assets/styles/components/base/filter.module.scss"
+import filter from "../../assets/styles/components/base/Filter.module.scss"
 
 function Filter({ img, content }) {
   return (
