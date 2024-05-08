@@ -1,0 +1,23 @@
+.search {
+
+    input {
+        background-color: #EBF0F080;
+        height: 40px;
+        padding: 0 15px 0 48px;
+        border-radius: 50px;
+        width: 100%;
+
+        &::placeholder {
+            color: var(--gray);
+            font-size: 14px;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+
+}

@@ -1,32 +1,52 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
+import header from "../assets/styles/components/Header.module.scss";
 
 import logo from "../assets/images/logo.svg";
-import search from "../assets/images/svg/search.svg";
 import basket from "../assets/images/svg/basket.svg";
+import img from "../assets/images/example/Img.png";
+
+import Search from "./base/Search";
 
 function Header() {
   return (
-    <header>
-      <div>
-        <Link to="/">
+    <header className={header.header}>
+      <div className={`flex ${header.logo_block}`}>
+        <Link className={header.logo} to="/">
           <img src={logo} alt="logo" />
         </Link>
-        <div>
-          <input placeholder="Search collections and creators" />
-          <img src={search} alt="search icon" />
-        </div>
+        <Search placeholder="Search collections and creators" />
       </div>
-      <div>
-        <nav>
-          <Link to="/">Explore</Link>
-          <Link to="/">Marketplace</Link>
-          <Link to="/">Collections</Link>
+      <div className={`flex ${header.nav_block}`}>
+        <nav className={header.nav}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Explore
+          </NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Marketplace
+          </NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Collections
+          </NavLink>
         </nav>
-        <button>Create</button>
-        <button>
-          <img src={basket} alt="basket icon" />
-        </button>
-        <div></div>
+        <div>
+          <button className="btn blue-btn">Create</button>
+          <button className="cursor-pointer">
+            <img src={basket} alt="basket icon" />
+          </button>
+          <div className={header.user}>
+            <img src={img} alt="user" />
+          </div>
+        </div>
       </div>
     </header>
   );
