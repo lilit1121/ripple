@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
-import "../../assets/styles/components/auth/AuthHeader.css";
+import "../../assets/styles/components/auth/AuthHeader.scss";
 
 function AuthHeader({ title, description }) {
   return (

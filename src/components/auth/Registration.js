@@ -7,8 +7,8 @@ import {
   schemaForCreator,
   schemaForCompany,
 } from "../../utils/ValidationScheme";
-import registration from "../../assets/styles/components/auth/Registration.module.css";
-import "../../assets/styles/views/Auth.css";
+import registration from "../../assets/styles/components/auth/Registration.module.scss";
+import "../../assets/styles/views/Auth.scss";
 import Modal from "../base/Modal";
 
 function Registration({ type }) {

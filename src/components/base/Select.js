@@ -1,4 +1,4 @@
-import select from "../../assets/styles/components/base/select.module.css"
+import select from "../../assets/styles/components/base/select.module.scss"
 
 function Select({ defaultValue, list }) {
   return (

@@ -5,7 +5,7 @@ import { socialMediaLogin } from "../constants/login";
 import { loginSchema } from "../utils/ValidationScheme";
 import AuthHeader from "../components/auth/AuthHeader";
 import AuthInput from "../components/auth/AuthInput";
-import loginStyles from "../assets/styles/views/Login.module.css";
+import loginStyles from "../assets/styles/views/Login.module.scss";
 
 function LoginForm({ handleSubmit, values, setFieldValue }) {
   return (

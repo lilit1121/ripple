@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerStyles from "../assets/styles/components/Footer.module.css";
+import footerStyles from "../assets/styles/components/Footer.module.scss";
 import Discord from "../assets/images/socialmedia/Discord.svg";
 import Twitter from "../assets/images/socialmedia/Twitter.svg";
 import LinkedIn from "../assets/images/socialmedia/ln.svg";

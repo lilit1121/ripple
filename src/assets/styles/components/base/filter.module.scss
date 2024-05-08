@@ -1,0 +1,25 @@
+.filter {
+    height: 36px;
+    padding: 0 19px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #CFDBD599;
+    min-width: calc(50% - 43px);
+    cursor: pointer;
+
+    p {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 72px;
+    }
+}

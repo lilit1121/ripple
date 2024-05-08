@@ -1,0 +1,17 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    > div:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: max-content;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import productCardStyles from "../../assets/styles/components/profile/ProductCard.module.css";
+import productCardStyles from "../../assets/styles/components/profile/ProductCard.module.scss";
 
 import Heart from "../svg/Heart";
 

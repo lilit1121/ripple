@@ -7,10 +7,11 @@ import { Tab } from "@mui/base/Tab";
 import Modal from "../components/base/Modal";
 import ProfileInfo from "../components/profile/ProfileInfo";
 import Card from "../components/profile/ProductCard";
+import Filters from "../components/profile/Filters";
 
-import profile from "../assets/styles/views/Profile.module.css";
-import "../assets/styles/components/modals/MessageModal.css";
-import "../assets/styles/components/modals/FollowingModal.css";
+import profile from "../assets/styles/views/Profile.module.scss";
+import "../assets/styles/components/modals/MessageModal.scss";
+import "../assets/styles/components/modals/FollowingModal.scss";
 
 import etc from "../assets/images/svg/etc.svg";
 import message from "../assets/images/svg/message.svg";
@@ -88,10 +89,14 @@ function Profile() {
           </Tab>
         </TabsList>
         <TabPanel value={1}>
+          <Filters />
           {renderCards()}
           {renderCards("collection")}
         </TabPanel>
-        <TabPanel value={2}>{renderCards("collection")}</TabPanel>
+        <TabPanel value={2}>
+          <Filters />
+          {renderCards("collection")}
+        </TabPanel>
       </Tabs>
       <button
         className="btn lightBlue-btn"
@@ -124,7 +129,7 @@ function Profile() {
           <h6>Following</h6>
           <div>
             {generateArray(numCards).map((index) => (
-              <div key={index} className="following-block">
+              <div key={`following-${index}`} className="following-block">
                 <div>
                   <div>
                     <img src={img} alt="user" />
@@ -155,7 +160,7 @@ function Profile() {
                 </div>
                 <div>
                   {generateArray(numCards).map((index) => (
-                    <div key={index}>
+                    <div key={`bg-${index}`}>
                       <img src={bg} alt="bg" />
                     </div>
                   ))}

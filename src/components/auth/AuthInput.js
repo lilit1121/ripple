@@ -1,7 +1,7 @@
 import { useState } from "react";
 import eyeClosed from "../../assets/images/auth/eye-closed.svg";
 import eyeOpen from "../../assets/images/auth/eye-open.svg";
-import "../../assets/styles/components/auth/AuthInput.css";
+import "../../assets/styles/components/auth/AuthInput.scss";
 
 function AuthInput({
   id,

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import AuthHeader from "../../components/auth/AuthHeader";
 import UserSvg from "../svg/auth/User";
-import accountTypesStyles from "../../assets/styles/components/auth/AccountTypes.module.css";
-import "../../assets/styles/views/Auth.css";
+import accountTypesStyles from "../../assets/styles/components/auth/AccountTypes.module.scss";
+import "../../assets/styles/views/Auth.scss";
 
 function AccountTypes({ handleStepChange, handleTypeChange }) {
   const [accountTypes, setAccountTypes] = useState([
